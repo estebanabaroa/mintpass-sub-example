@@ -5,6 +5,9 @@ import path from 'path'
 import {fileURLToPath} from 'url'
 const rootPath = path.dirname(fileURLToPath(import.meta.url))
 
+import {inspect} from 'util'
+inspect.defaultOptions.depth = 10
+
 const title = 'mintpass test'
 const description = 'subplebbit to test mintpass'
 
@@ -40,7 +43,13 @@ const plebbit = await Plebbit({
   pubsubKuboRpcClientsOptions: ['http://127.0.0.1:6001/api/v0'],
   httpRoutersOptions: [],
   dataPath: path.join(rootPath, '.plebbit'),
-  publishUpdate: 1000
+  publishUpdate: 1000,
+  chainProviders: {
+    eth: {
+      urls: ['https://ethrpc.xyz', 'viem', 'ethers.js'],
+      chainId: 1,
+    }
+  }
 })
 plebbit.on('error', error => {
   console.log(error) // logging plebbit errors are only useful for debugging, not production
