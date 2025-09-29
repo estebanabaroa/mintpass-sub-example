@@ -1,5 +1,5 @@
 {
-  "name": "ai-sub",
+  "name": "mintpass-sub",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@plebbit/plebbit-js": "https://github.com/plebbit/plebbit-js.git#d1876f08de89c1405f5f8cede8f50c8be0c9440a",
+    "@plebbit/plebbit-js": "https://github.com/plebbit/plebbit-js.git#3c80a9e42ebdd2e78c164e949bd94ac9d6d55714",
     "decompress": "^4.2.1",
     "fs-extra": "^11.3.0",
     "progress": "^2.0.3"

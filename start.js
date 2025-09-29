@@ -85,6 +85,7 @@ await subplebbit.edit({
       options: {
         contractAddress: '0xcb60e1dd6944dfc94920e28a277a51a06e9f20d2',
         chainTicker: 'eth',
+        rpcUrl: 'https://sepolia.base.org',
         // requiredTokenType: '0', // 0 = SMS verification
         // transferCooldownSeconds: '604800', // 1 week
       }
