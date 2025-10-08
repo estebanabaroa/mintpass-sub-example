@@ -12,6 +12,9 @@
     "fs-extra": "^11.3.0",
     "progress": "^2.0.3"
   },
+  "overrides": {
+    "@mintpass/challenge": "1.1.4"
+  },
   "author": "",
   "license": "ISC",
   "description": ""

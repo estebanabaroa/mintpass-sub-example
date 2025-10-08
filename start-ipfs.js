@@ -19,7 +19,7 @@ const ipfsSwarmPort = 7001
 const proxyIpfsApiPort = 6003
 const ipfsGatewayPort = 6002
 const ipfsApiPort = 6001
-const ipfsClientVersion = '0.37.0'
+const ipfsClientVersion = '0.38.0'
 
 // list of http routers to use
 const envHttpRouterUrls = process.env.HTTP_ROUTER_URLS ? process.env.HTTP_ROUTER_URLS.split(',').map(url => url.trim()) : []
